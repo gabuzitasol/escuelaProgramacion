@@ -2,6 +2,7 @@ import java.util.Scanner;
 import calculadoraIMC.menuCalculadoraIMC;
 import conversorDeMonedas.menuConversorDeMonedas;
 import ordenarNumeros.menuOrdenarNumeros;
+import realizarAnalisisDeDatos.menuRealizarAnalisisDeDatos;
 import validacionContrasenia.menuValidacionContrasenia;
 
 public class Main {
@@ -15,7 +16,8 @@ public class Main {
             System.out.println("2. Conversor de Monedas");
             System.out.println("3. Validación de Contraseña");
             System.out.println("4. Ordenar Números");
-            System.out.println("5. Salir");
+            System.out.println("5. Realizar Análisis de Datos");
+            System.out.println("6. Salir");
             System.out.print("Seleccione una opción: ");
             int opcion = scanner.nextInt();
 
@@ -32,6 +34,8 @@ public class Main {
                 case 4:
                     menuOrdenarNumeros.mostrarMenu(scanner);
                 case 5:
+                    menuRealizarAnalisisDeDatos.mostrarMenu(scanner);
+                case 6:
                     salir = true;
                     System.out.println("¡Hasta luego!");
                     break;
