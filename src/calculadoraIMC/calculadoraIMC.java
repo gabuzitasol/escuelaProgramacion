@@ -1,4 +1,4 @@
-package calculadora;
+package calculadoraIMC;
 
 import java.util.Scanner;
 public class calculadoraIMC {
