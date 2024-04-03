@@ -1,21 +1,21 @@
-package calculadora;
+package conversorDeMonedas;
 
 import java.util.Scanner;
 
-public class menuCalculadoraIMC {
+public class menuConversorDeMonedas {
     public static void mostrarMenu(Scanner scanner) {
         boolean salir = false;
 
         while (!salir) {
-            System.out.println("=== Calculadora Indice Masa Corporal ===");
-            System.out.println("1. Calcular IMC");
+            System.out.println("=== Conversor de Monedas ===");
+            System.out.println("1. Convertir Pesos Argentinos a Dólares");
             System.out.println("2. Salir");
             System.out.print("Seleccione una opción: ");
             int opcion = scanner.nextInt();
 
             switch (opcion) {
                 case 1:
-                    calculadoraIMC.calcularIMC(scanner);
+                    conversorDeMonedas.convertirPesosADolares(scanner);
                     break;
                 case 2:
                     salir = true;
